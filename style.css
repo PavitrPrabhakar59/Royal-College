@@ -4,6 +4,15 @@
   font-family: 'Poppins', sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: aqua;
+  /* border-radius: 10px; */
+}
+
 .heading {
   min-height: 100vh;
   width: 100%;
