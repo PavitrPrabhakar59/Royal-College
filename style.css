@@ -6,18 +6,14 @@
 
 ::-webkit-scrollbar {
   width: 4px;
-  position:absolute;
 }
 
 ::-webkit-scrollbar-track {
-  /* box-shadow: inset 0 0 5px grey;
-  border-radius: 10px; */
-  background-color: transparent;
+  background-color: grey;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: aqua;
-  /* border-radius: 10px; */
 }
 
 .heading {
