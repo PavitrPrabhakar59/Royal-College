@@ -132,7 +132,7 @@ nav img {
   transition: 1s;
 }
 
-nav .fa {
+nav .fa-solid {
   display: none;
 }
 
@@ -327,7 +327,7 @@ h3 {
 
   .nav-links {
     position: absolute;
-    background: #f44336;
+    background: aqua;
     height: 100vh;
     width: 200px;
     top: 0;
@@ -337,7 +337,7 @@ h3 {
     transition: 1s;
   }
 
-  nav .fa {
+  nav .fa-solid {
     display: block;
     color: #fff;
     margin: 10px;
