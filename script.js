@@ -6,3 +6,11 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+
+var navLinks = document.getElementById("navLinks");
+function showMenu() {
+  navLinks.style.right = "0";
+}
+function hideMenu() {
+  navLinks.style.right = "-200px"
+}
