@@ -9,22 +9,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&amp;display=swap"
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   <script src="https://kit.fontawesome.com/f59b11ebdf.js" crossorigin="anonymous"></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6697319052110292"
     crossorigin="anonymous"></script>
-      <link rel="canonical" href="https://royalcollegedombivli.netlify.app/courses" />
+  <link rel="canonical" href="https://royalcollegedombivli.netlify.app/courses" />
 </head>
 
 <body>
-  <div class="header">
-    <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
-    </div>
-  </div>
+  <div id="scroll"></div>
   <section class="sub-heading sub-heading6">
     <nav> <a href="index.html"> <img src="Resources/Logo.png" alt="Logo"> </a>
-      <div class="nav-links">
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
         <ul>
           <li> <a href="index.html">Home</a> </li>
           <li class="active"> <a href="Courses.html">Courses</a> </li>
@@ -35,6 +32,7 @@
           <li> <a href="Login.html">Login</a> </li>
         </ul>
       </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
     </nav>
   </section>
   <section class="degree">

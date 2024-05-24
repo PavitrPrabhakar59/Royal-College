@@ -16,23 +16,14 @@
   background-color: aqua;
 }
 
-.header {
+#scroll {
+  background: aqua;
+  height: 4px;
+  width: 0;
   position: fixed;
   top: 0;
-  z-index: 1;
-  width: 100%;
-}
-
-.progress-container {
-  width: 100%;
-  height: 4px;
-  background-color: grey;
-}
-
-.progress-bar {
-  height: 4px;
-  background: aqua;
-  width: 0%;
+  transition: width 0.1s ease;
+  z-index: 999;
 }
 
 .heading {
@@ -43,11 +34,10 @@
   background-position: center;
   background-size: cover;
   position: relative;
-  overflow: hidden;
+  overflow-x: clip;
 }
 
 .heading2 {
-
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(Resources/Login.jpeg);
 }
 
@@ -317,47 +307,6 @@ h3 {
 }
 
 
-@media (max-width:700px) {
-  .text-box h1 {
-    font-size: 20px;
-  }
-
-  .nav-links ul li {
-    display: block;
-  }
-
-  .nav-links {
-    position: absolute;
-    background: aqua;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-    transition: 1s;
-  }
-
-  nav .fa-solid {
-    display: block;
-    color: #fff;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
-  }
-
-  .nav-links ul {
-    padding: 30px;
-  }
-
-  .row {
-    flex-direction: column;
-  }
-
-  .cta h1 {
-    font-size: 24px;
-  }
-}
 
 .sub-heading {
   height: 50vh;
@@ -368,6 +317,8 @@ h3 {
   background-position: center;
   text-align: center;
   color: #fff;
+  position: relative;
+  overflow-x: clip;
 }
 
 .sub-heading2 {
@@ -692,7 +643,6 @@ h3 {
 
 .imgbox {
   width: 80%;
-  padding: 20px;
   margin: 100px auto;
   display: flex;
   justify-content: space-between;
@@ -700,17 +650,14 @@ h3 {
 
 .imgan {
   flex-basis: 22%;
-  width: 200px;
-  margin: 0 10px;
+  margin-bottom: 30px;
   border-radius: 5px;
   transition: 0.5s;
 }
 
-.imgan img,
-.imgan iframe {
+.imgan img {
   display: block;
   width: 100%;
-  height: 100%;
   border-radius: 5px;
 }
 
@@ -723,4 +670,58 @@ h3 {
 #rick {
   width: 100%;
   height: 100vh;
+}
+
+@media (max-width:700px) {
+  nav img {
+    width: 40px;
+  }
+
+  .text-box h1 {
+    font-size: 20px;
+  }
+
+  .nav-links ul li {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: aqua;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  nav .fa-solid {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-links ul {
+    padding: 30px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .cta h1 {
+    font-size: 24px;
+  }
+
+  .imgbox {
+    flex-direction: column;
+  }
+
+  .imgan:hover {
+    transform: scale(1.2);
+  }
 }
