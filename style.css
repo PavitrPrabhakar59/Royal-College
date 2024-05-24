@@ -180,27 +180,34 @@ h3 {
   padding-top: 50px;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-basis: 30%;
+}
+
 .degree-col {
   flex-basis: 22%;
   border-radius: 10px;
   margin-bottom: 30px;
   position: relative;
-  overflow: hidden;
 }
 
 .course {
   flex-basis: 32%;
-  margin-bottom: -50px;
+  margin-bottom: 0px;
 }
 
 .degree-col img {
-  height: 100%;
   width: 100%;
   display: block;
+  border-radius: 10px;
 }
 
 .layer {
   background: transparent;
+  border-radius: 10px;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -220,8 +227,9 @@ h3 {
   color: #fff;
   font-size: 26px;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 50%;
+  margin: 0;
+  transform: translate(50%,50%);
   position: absolute;
   opacity: 0;
   transition: 0.5s;
@@ -234,7 +242,7 @@ h3 {
 
 .layer:hover h3,
 .layer:hover p {
-  bottom: 49%;
+  bottom: 50%;
   opacity: 1;
 }
 
@@ -507,7 +515,7 @@ h3 {
   padding: 25px;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-45%);
+  transform: translate(-50%, -45%);
 }
 
 .form h3 {
