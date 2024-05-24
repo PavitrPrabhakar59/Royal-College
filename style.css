@@ -474,7 +474,6 @@ h3 {
 .contact-col div .fa {
   font-size: 28px;
   color: aqua;
-  margin: 10px;
   margin-right: 30px;
 }
 
@@ -723,5 +722,11 @@ h3 {
 
   .imgan:hover {
     transform: scale(1.2);
+  }
+  .contact-col div .fa{
+    font-size: 21px;
+  }
+  .contact-col div h5{
+    font-size: 18px;
   }
 }
