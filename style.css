@@ -30,7 +30,7 @@
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)),
-    url(Resources/Homepage.jpg);
+    url(resources/Homepage.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -38,7 +38,7 @@
 }
 
 .heading2 {
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(Resources/Login.jpeg);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(resources/Login.jpeg);
 }
 
 nav {
@@ -284,7 +284,7 @@ h3 {
   margin: 100px auto;
   width: 80%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(Resources/CTA.webp);
+    url(resources/CTA.webp);
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -320,7 +320,7 @@ h3 {
   height: 50vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(Resources/Contact.webp);
+    url(resources/Contact.webp);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -331,27 +331,27 @@ h3 {
 
 .sub-heading2 {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(Resources/Blog\ 2.jpeg);
+    url(resources/Blog\ 2.jpeg);
 }
 
 .sub-heading3 {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(Resources/Register.png);
+    url(resources/Register.png);
 }
 
 .sub-heading4 {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(Resources/Login.jpeg);
+    url(resources/Login.jpeg);
 }
 
 .sub-heading5 {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(Resources/About.webp);
+    url(resources/About.webp);
 }
 
 .sub-heading6 {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(Resources/Course.png);
+    url(resources/Course.png);
 }
 
 .sub-heading h1 {
