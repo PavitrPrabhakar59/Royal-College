@@ -14,13 +14,23 @@ function hideMenu() {
   navLinks.style.right = "-200px"
 }
 
-var imgan = document.querySelectorAll("div.imgan");
-var imgan_img = document.querySelectorAll("div.imgan>img");
-for (var i = 0; i < imgan.length; i++) {
-  imgan_img[i].addEventListener("load", CheckDimension());
-}
-function CheckDimension() {
-  if (imgan_img[i].naturalWidth < imgan_img[i].naturalHeight) {
-    imgan[i].classList.add("imgan-h");
+window.addEventListener('load', function () {
+  var imgan = document.querySelectorAll("div.imgan");
+
+  imgan.forEach(function (element) {
+    var img = element.querySelector("img");
+    if (img.complete) {
+      checkImageDimensions(img, element);
+    } else {
+      img.addEventListener('load', function () {
+        checkImageDimensions(img, element);
+      });
+    }
+  });
+
+  function checkImageDimensions(img, element) {
+    if (img.naturalWidth < img.naturalHeight) {
+      element.classList.add("imgan-h");
+    }
   }
-}
+});
