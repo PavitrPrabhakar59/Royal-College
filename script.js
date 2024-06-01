@@ -20,9 +20,7 @@ for (var i = 0; i < imgan.length; i++) {
   imgan_img[i].addEventListener("load", CheckDimension());
 }
 function CheckDimension() {
-  console.log("Image"+[i]);
   if (imgan_img[i].naturalWidth < imgan_img[i].naturalHeight) {
     imgan[i].classList.add("imgan-h");
-    console.log("Image"+[i]);
   }
 }

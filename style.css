@@ -677,7 +677,6 @@ h3 {
 
 .imgan:hover {
   box-shadow: 0 0;
-  /* transform: scale(1.2); */
   z-index: 1;
   overflow: visible;
 }
@@ -694,10 +693,11 @@ h3 {
   width: 100%;
 }
 
-.imgan-h:hover img{
+.imgan-h:hover img {
   width: auto;
   height: 100%;
 }
+
 .rick {
   height: 100vh;
   position: relative;
