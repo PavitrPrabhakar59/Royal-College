@@ -21,13 +21,8 @@ window.addEventListener('load', function () {
     var img = element.querySelector("img");
     if (img.complete) {
       checkImageDimensions(img, element);
-     } //else {
-    //   img.addEventListener('load', function () {
-    //     checkImageDimensions(img, element);
-    //   });
-    // }
+    }
   });
-
   function checkImageDimensions(img, element) {
     if (img.naturalWidth < img.naturalHeight) {
       element.classList.add("imgan-h");
