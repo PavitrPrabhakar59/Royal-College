@@ -17,7 +17,7 @@ function hideMenu() {
 var imgan = document.querySelectorAll("div.imgan");
 var imgan_img = document.querySelectorAll("div.imgan>img");
 for (var i = 0; i < imgan.length; i++) {
-  imgan_img[i].addEventListener("load", CheckDimension());
+  imgan_img[i].addEventListener("", CheckDimension());
 }
 function CheckDimension() {
   if (imgan_img[i].naturalWidth < imgan_img[i].naturalHeight) {
